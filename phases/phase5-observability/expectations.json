@@ -1,0 +1,44 @@
+[
+  {
+    "query_id": 1,
+    "query": "What data do we have?",
+    "must_include": ["patients", "prescriptions", "doctors", "drug_interactions"],
+    "should_include": ["visits", "outcomes", "pharmacy_inventory"],
+    "must_not_include": []
+  },
+  {
+    "query_id": 2,
+    "query": "Tell me about our prescription data and how it connects to drug information.",
+    "must_include": ["prescriptions", "NDC"],
+    "should_include": ["FDA", "drug_interactions", "Metformin", "Lisinopril"],
+    "must_not_include": []
+  },
+  {
+    "query_id": 3,
+    "query": "Are any of our patients on drugs that have known FDA interaction warnings?",
+    "must_include": ["interaction", "Lisinopril"],
+    "should_include": ["Metformin", "Atorvastatin", "Amlodipine", "Levothyroxine", "Omeprazole"],
+    "must_not_include": []
+  },
+  {
+    "query_id": 4,
+    "query": "Find anything related to cardiovascular health.",
+    "must_include": ["hypertension", "Lisinopril", "Amlodipine"],
+    "should_include": ["atrial_fibrillation", "Atorvastatin", "high_cholesterol"],
+    "must_not_include": []
+  },
+  {
+    "query_id": 5,
+    "query": "Review Patient 1's current medications for potential risks.",
+    "must_include": ["Metformin", "Lisinopril"],
+    "should_include": ["interaction", "diabetes", "hypertension", "Jane"],
+    "must_not_include": []
+  },
+  {
+    "query_id": 6,
+    "query": "What are the most critical data relationships in our system?",
+    "must_include": ["prescriptions", "patients"],
+    "should_include": ["NDC", "drug_interactions", "knowledge graph"],
+    "must_not_include": []
+  }
+]

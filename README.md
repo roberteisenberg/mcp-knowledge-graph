@@ -18,6 +18,7 @@ Every phase of this tutorial adds infrastructure that takes work away from the L
 | [Phase 2](phases/phase2-knowledge-graph/) | Knowledge graph, graph traversal, MCP prompts | `find_path` and `suggest_join` give deterministic answers — no speculative SQL | Graph tools replace multi-step LLM reasoning |
 | [Phase 3](phases/phase3-agent-workflows/) | Deterministic workflows | Python drives the tool calls — zero hallucination in orchestration | 30 MCP calls + 9 Claude calls vs. fully interactive |
 | [Phase 4](phases/phase4-semantic/) | Semantic search | Discovery grounded in actual data — no hallucinated entities | First call returns ranked results vs. trial-and-error |
+| [Phase 5](phases/phase5-observability/) | Tracing, cost tracking, eval | Measure hallucinations instead of eyeballing. Prove Phase 3 is cheaper. | Know what every query costs. Set budget limits. |
 
 ## What It Builds
 
@@ -45,6 +46,9 @@ The same MCP tools serve two modes: **LLM-driven** (Claude decides which tools t
 
 ### Phase 4 — Semantic Search
 Sentence-transformer embeddings over the knowledge graph. `semantic_search("heart problems")` returns hypertension, amlodipine, atrial fibrillation — ranked by relevance, grounded in actual data. Without semantic search, the LLM has to guess entity names from its training data. [The Phase 3 vs Phase 4 comparison](phases/phase4-semantic/README.md#phase-3-vs-phase-4-same-query-different-approach) shows this concretely: Phase 3 guessed 6 drugs that don't exist in the database.
+
+### Phase 5 — Observability
+Instrument every LLM call and tool call with tracing. Track token cost per query — prove that Phase 3's deterministic workflows are 58% cheaper than interactive. Evaluate outputs against ground truth: do the 6 test queries return the right patients, drugs, and conditions? Detect hallucinations by comparing the final answer against what the tools actually returned.
 
 ## The Orchestration Spectrum
 
@@ -87,6 +91,7 @@ python3 phases/phase1-mcp-server/client.py --test
 python3 phases/phase2-knowledge-graph/client.py --test
 python3 phases/phase3-agent-workflows/client.py --workflow safety_review
 python3 phases/phase4-semantic/client.py --query "Find anything related to cardiovascular health."
+python3 phases/phase5-observability/run_eval.py --phase 4
 ```
 
 ## Tech Stack
