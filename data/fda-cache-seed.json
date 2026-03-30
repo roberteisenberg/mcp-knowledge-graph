@@ -1,0 +1,82 @@
+{
+  "drugs": {
+    "metformin": {
+      "brand_name": "METFORMIN HYDROCHLORIDE",
+      "generic_name": "METFORMIN HYDROCHLORIDE",
+      "manufacturer": "Various",
+      "product_ndc": ["11788-037"],
+      "route": "ORAL",
+      "substance_name": ["METFORMIN HYDROCHLORIDE"],
+      "pharm_class": ["Biguanide [EPC]"],
+      "indications": "Metformin hydrochloride is indicated as an adjunct to diet and exercise to improve glycemic control in adults and pediatric patients 10 years of age and older with type 2 diabetes mellitus.",
+      "warnings": "Lactic acidosis is a serious metabolic complication that can occur due to metformin accumulation. The risk increases with conditions such as sepsis, dehydration, excess alcohol intake, hepatic impairment, renal impairment, and acute congestive heart failure.",
+      "drug_interactions_text": "Carbonic anhydrase inhibitors may increase the risk of lactic acidosis. Drugs that reduce metformin clearance (e.g., ranolazine, vandetanib, dolutegravir, cimetidine) may increase metformin exposure.",
+      "adverse_reactions": "Most common adverse reactions (>5%) are diarrhea, nausea/vomiting, flatulence, abdominal discomfort, indigestion, asthenia, and headache."
+    },
+    "lisinopril": {
+      "brand_name": "LISINOPRIL",
+      "generic_name": "LISINOPRIL",
+      "manufacturer": "Various",
+      "product_ndc": ["68001-335"],
+      "route": "ORAL",
+      "substance_name": ["LISINOPRIL"],
+      "pharm_class": ["Angiotensin Converting Enzyme Inhibitor [EPC]"],
+      "indications": "Lisinopril is indicated for the treatment of hypertension in adult and pediatric patients 6 years of age and older to lower blood pressure. It is also indicated for the treatment of heart failure and acute myocardial infarction.",
+      "warnings": "Can cause fetal toxicity when administered to a pregnant woman. Angioedema of the face, extremities, lips, tongue, glottis, and/or larynx has been reported.",
+      "drug_interactions_text": "Dual blockade of the renin-angiotensin system with ARBs, ACE inhibitors, or aliskiren increases risks of hypotension, hyperkalemia, and renal impairment. NSAIDs may reduce the antihypertensive effect.",
+      "adverse_reactions": "Most common adverse reactions (>1%) are headache, dizziness, cough, hypotension, and diarrhea."
+    },
+    "atorvastatin": {
+      "brand_name": "ATORVASTATIN CALCIUM",
+      "generic_name": "ATORVASTATIN CALCIUM",
+      "manufacturer": "Various",
+      "product_ndc": ["70771-1446"],
+      "route": "ORAL",
+      "substance_name": ["ATORVASTATIN CALCIUM"],
+      "pharm_class": ["HMG-CoA Reductase Inhibitor [EPC]"],
+      "indications": "Atorvastatin is indicated as an adjunct to diet to reduce elevated total-C, LDL-C, apo B, and TG levels and to increase HDL-C in patients with primary hyperlipidemia and mixed dyslipidemia.",
+      "warnings": "Skeletal muscle effects (e.g., myopathy and rhabdomyolysis): Risks increase with higher doses and concomitant use of certain medicines. Advise patients to promptly report unexplained and/or persistent muscle pain, tenderness, or weakness.",
+      "drug_interactions_text": "Strong CYP3A4 inhibitors (e.g., clarithromycin, itraconazole, HIV protease inhibitors) increase the risk of myopathy. Limit dose with certain drugs (e.g., niacin, fibrates).",
+      "adverse_reactions": "Most common adverse reactions (>2%) are nasopharyngitis, arthralgia, diarrhea, pain in extremity, and urinary tract infection."
+    },
+    "omeprazole": {
+      "brand_name": "OMEPRAZOLE",
+      "generic_name": "OMEPRAZOLE",
+      "manufacturer": "Various",
+      "product_ndc": ["85509-1396"],
+      "route": "ORAL",
+      "substance_name": ["OMEPRAZOLE"],
+      "pharm_class": ["Proton Pump Inhibitor [EPC]"],
+      "indications": "Omeprazole is indicated for the treatment of gastroesophageal reflux disease (GERD), including erosive esophagitis, and for the treatment of duodenal ulcers and gastric ulcers.",
+      "warnings": "Long-term use may be associated with increased risk of bone fractures, Clostridium difficile-associated diarrhea, hypomagnesemia, and vitamin B12 deficiency.",
+      "drug_interactions_text": "Omeprazole is a CYP2C19 inhibitor. May reduce efficacy of clopidogrel. May affect absorption of drugs dependent on gastric pH (e.g., ketoconazole, iron salts, erlotinib, mycophenolate).",
+      "adverse_reactions": "Most common adverse reactions (>2%) are headache, abdominal pain, nausea, diarrhea, vomiting, and flatulence."
+    },
+    "amlodipine": {
+      "brand_name": "AMLODIPINE BESYLATE",
+      "generic_name": "AMLODIPINE BESYLATE",
+      "manufacturer": "Various",
+      "product_ndc": ["68071-4251"],
+      "route": "ORAL",
+      "substance_name": ["AMLODIPINE BESYLATE"],
+      "pharm_class": ["Dihydropyridine Calcium Channel Blocker [EPC]"],
+      "indications": "Amlodipine besylate is indicated for the treatment of hypertension and coronary artery disease including chronic stable angina and vasospastic angina (Prinzmetal's angina).",
+      "warnings": "Symptomatic hypotension is possible, particularly in patients with severe aortic stenosis. Worsening angina and acute myocardial infarction can develop after starting or increasing the dose, particularly in patients with severe obstructive coronary artery disease.",
+      "drug_interactions_text": "CYP3A4 inhibitors (e.g., diltiazem, ketoconazole, itraconazole, ritonavir) may increase amlodipine levels. Amlodipine may increase simvastatin exposure; limit simvastatin dose to 20mg.",
+      "adverse_reactions": "Most common adverse reactions (>1%) are edema, dizziness, flushing, and palpitation."
+    },
+    "levothyroxine": {
+      "brand_name": "LEVOTHYROXINE SODIUM",
+      "generic_name": "LEVOTHYROXINE SODIUM",
+      "manufacturer": "Mylan Pharmaceuticals",
+      "product_ndc": ["0378-1805"],
+      "route": "ORAL",
+      "substance_name": ["LEVOTHYROXINE SODIUM"],
+      "pharm_class": ["Thyroid Hormone [EPC]"],
+      "indications": "Levothyroxine sodium is indicated as replacement therapy in primary, secondary, and tertiary hypothyroidism and as an adjunct to surgery and radioiodine therapy in the management of thyrotropin-dependent well-differentiated thyroid cancer.",
+      "warnings": "Thyroid hormones should not be used for treatment of obesity or weight loss. Excessive doses may produce serious or even life-threatening manifestations of toxicity.",
+      "drug_interactions_text": "Many drugs affect thyroid hormone pharmacokinetics and metabolism. Calcium carbonate, ferrous sulfate, and proton pump inhibitors may reduce levothyroxine absorption. Administer levothyroxine at least 4 hours apart from these agents.",
+      "adverse_reactions": "Adverse reactions are primarily those of hyperthyroidism due to overreplacement: arrhythmias, myocardial infarction, dyspnea, muscle spasm, headache, nervousness, irritability, insomnia, tremors, weight loss, diarrhea."
+    }
+  }
+}

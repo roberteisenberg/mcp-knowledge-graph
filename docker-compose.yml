@@ -1,0 +1,17 @@
+services:
+  clinic-db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: clinic
+      POSTGRES_USER: clinic_user
+      POSTGRES_PASSWORD: clinic_pass
+    volumes:
+      - ./data/clinic-schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+      - ./data/clinic-seed-data.sql:/docker-entrypoint-initdb.d/02-seed.sql
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U clinic_user -d clinic"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
